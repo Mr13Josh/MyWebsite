@@ -31,23 +31,7 @@
 
   
 
-  function onYouTubePlayerAPIReady() {
-   player = new YT.Player('player', {
-    height: '390',
-    width: '640',
-    videoId: '7HxjdaqiMe8',
-    playerVars: {
-     'controls': 0,
-     'disablekb': 1,
-     'enablejsapi': 1,
-     'modestbranding': 1,
-     'showinfo': 0
-    },
-    events: {
-     'onReady': onPlayerReady,
-     'onStateChange': onPlayerStateChange
-    }
-   });
+  
   }
 
 
