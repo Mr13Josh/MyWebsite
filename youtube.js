@@ -43,7 +43,7 @@
     player = new YT.Player('player', {
     height: '390',
     width: '640',
-    videoId: $('#changeVideoButton'),
+    videoId: 'dO2rM-l-vdQ',
     playerVars: {
      'controls': 0,
      'disablekb': 1,
