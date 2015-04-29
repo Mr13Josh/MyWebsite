@@ -21,13 +21,14 @@
   var durationHours = '';
 
   var totalDuration = "0:00:00";
-  var idPlayer = '7HxjdaqiMe8';
+  
 
    //    This function creates a YouTube player
    //    after the API code downloads.
   var player;
   function setId(var id){
     idPlayer = id;
+    player.playVideo();
   }
 
   
@@ -36,7 +37,7 @@
    player = new YT.Player('player', {
     height: '390',
     width: '640',
-    videoId: idPlayer,
+    videoId: '7HxjdaqiMe8',
     playerVars: {
      'controls': 0,
      'disablekb': 1,
@@ -61,7 +62,24 @@
       player.videoId = '#person';
       player.reload();
     })  */
-
+   $('#changeVideo').on("click", function() {
+    player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: $('videoId'),
+    playerVars: {
+     'controls': 0,
+     'disablekb': 1,
+     'enablejsapi': 1,
+     'modestbranding': 1,
+     'showinfo': 0
+    },
+    events: {
+     'onReady': onPlayerReady,
+     'onStateChange': onPlayerStateChange
+    }
+   });
+   })
    $('#play-button').on("click", function() {
     player.playVideo();
    });
@@ -139,7 +157,7 @@
 
   function onSeek(barLocation) {
    if (barLocation < maxTime) {
-    player.seekTo(barLocation, true);
+    player.seek(barLocation, true);
    }
   }
  

@@ -6,7 +6,7 @@
 
 
  <meta charset="utf-8">
- <title>jQuery UI Slider - Default functionality</title>
+ <title>VideoProjectAPI</title>
  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
  <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
@@ -23,21 +23,21 @@
  </head>
 
 <body>
-  <button onclick="myFunction()">Want a different video?</button>
-
+  <form>
+  <input type="text" value="" var="videochange"></input>
+  <button id="changeVideo" value=$('#videochange') var=changeVideo>Want a different video?</button>
+</form>
 <p id="demo"></p>
 
-<script>
+<!-- <script>
 function myFunction() {
-    var video = prompt("Please enter your name", "Harry Potter");
+    var video = prompt("Please enter video preference", "");
     if (video != ) {
-      document.getElementById("player").stopVideo();
-      //loadVideoById(video, 0, "medium");
-       // $parent.player.loadVideoById(video, 0, "medium");
+      document.getElementById("player").value = video;
     }
 }
 //player.loadVideoById(videoId:String, startSeconds:Number, suggestedQuality:String)
-</script>
+</script> -->
  <p>
   <div id="player"></div>
   <div id="slider"></div>
