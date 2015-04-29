@@ -77,7 +77,7 @@
      'onStateChange': onPlayerStateChange
     }
    });
-   })
+   });
    $('#play-button').on("click", function() {
     player.playVideo();
    });
