@@ -3,6 +3,7 @@ body{
 	font-style:"Times New Roman";
 }
 
-div.slider {
+#slider {
 	width: 640px;
 }
+
