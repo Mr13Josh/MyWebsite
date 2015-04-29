@@ -44,11 +44,11 @@
       player.videoId = '#person';
       player.reload();
     })  */
-   $('#changeVideo').on("click", function() {
+   $('#changeVideoButton').on("click", function() {
     player = new YT.Player('player', {
     height: '390',
     width: '640',
-    videoId: $('videoId'),
+    videoId: $('#videoValue').value,
     playerVars: {
      'controls': 0,
      'disablekb': 1,
@@ -61,6 +61,7 @@
      'onStateChange': onPlayerStateChange
     }
    });
+    player.
    });
    $('#play-button').on("click", function() {
     player.playVideo();
