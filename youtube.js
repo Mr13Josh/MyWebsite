@@ -27,12 +27,7 @@
    //    after the API code downloads.
   var player;
   
-  }
-
   
-
-  
-  }
 
 
    //  The API will call this function when the video player is ready.
