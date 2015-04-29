@@ -26,9 +26,7 @@
    //    This function creates a YouTube player
    //    after the API code downloads.
   var player;
-  function setId(var id){
-    idPlayer = id;
-    player.playVideo();
+  
   }
 
   
