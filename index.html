@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>jQuery UI Slider - Default functionality</title>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script>
-$(function() {
-$("#slider").slider();
-});
-</script>
-</head>
+ 
+
+
+ <meta charset="utf-8">
+ <title>VideoProjectAPI</title>
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+ <link rel="stylesheet" href="style.css">
+
+ <script>
+  $(function() {
+   $("#slider").slider();
+  });
+ </script>
+
+
+
+ </head>
+
 <body>
-<button onclick="myFunction()">Want a different video?</button>
+  <form>
+  <input id="videoValue" type="text"var=#videoValue></input>
+  <input type="submit" id="changeVideoButton"value="Want a different video?">Want a different video?</input>
+</form>
 <p id="demo"></p>
-<script>
+
+<!-- <script>
 function myFunction() {
-var video = prompt("Please enter your name", "Harry Potter");
-if (video != ) {
-document.getElementById("player").stopVideo();
-//loadVideoById(video, 0, "medium");
-// $parent.player.loadVideoById(video, 0, "medium");
-}
+    var video = prompt("Please enter video preference", "");
+    if (video != ) {
+      document.getElementById("player").value = video;
+    }
 }
 //player.loadVideoById(videoId:String, startSeconds:Number, suggestedQuality:String)
-</script>
-<p>
-<div id="player"></div>
-<div id="slider"></div>
-</p>
-<p>
-</p>
-<p>Video status: <span class="status" id="timer">...</span>
-</p>
-<p>
-<button id="rewind-button"><<</button>
-<button id="play-button">PLAY</button>
-<button id="pause-button">PAUSE</button>
-<button id="fast-forward">>></button>
-</p>
-<script src="youtube.js" ></script>
+</script> -->
+ <p>
+  <div id="player"></div>
+ </p>
+ <p>
+  <div id="slider">
+
+  </div>
+ </p>
+ <p>Video status: <span class="status" id="timer">...</span>
+ </p>
+ <p>
+  <button id="rewind-button"><<</button>
+  <button id="play-button">PLAY</button>
+  <button id="pause-button">PAUSE</button>
+  <button id="fast-forward">>></button>
+ </p>
+ <script src="youtube.js" ></script>
 </body>
+
 </html>
