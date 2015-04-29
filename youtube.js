@@ -56,7 +56,6 @@
      'onStateChange': onPlayerStateChange
     }
    });
-    player.
    });
    $('#play-button').on("click", function() {
     player.playVideo();
